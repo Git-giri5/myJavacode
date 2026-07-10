@@ -8,6 +8,10 @@ public class DP {
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
+        if(n==0){
+            System.out.println(0);
+            return;
+        }
         int maxx=0,p1=0,p2=0;
         for(int i=0;i<n;i++){
             int take=arr[i]+p1;
